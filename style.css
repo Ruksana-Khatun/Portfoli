@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #081b29;
+  color: #ededed;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  font-size: 1.5em;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  
+}
+.nav-var a {
+  font-size: 1em;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 25px;
+}
+.nav-var a:hover,
+.nav-var a.active {
+  color: #00abf0;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+.main-contect {
+  max-width: 600px;
+}
+.main-contect h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.main-contect h3 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #00abf0;
+}
+.main-contect p {
+  font-size: 1em;
+  margin: 20px 0 40px;
+}
+
+.main-contect .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+  /* background-color: yellowgreen; */
+}
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  width: 150px;
+  height: 100%;
+  justify-content: center;
+  align-items: baseline;
+  /* text-align: center; */
+  background-color: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+}
+.btn-box a:nth-child(2) {
+  background-color: transparent;
+  color: #00abf0;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+
+}
+.btn-box a:hover{
+    color: #00abf0;
+}
+
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+ background: #081b29;
+   z-index: -1;
+  transition: .5s;
+}
+
+
+ .btn-box a:hover::before {
+  width: 100%;
+}
+
+
+.main-sec{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-sec a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.main-sec a::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100;
+    width: 0;
+    background:#00abf0;
+    z-index: -1;
+    transition: .5s;
+
+
+
+}
+.main-sec a:hover::before{
+    width: 100%;
+
+
+
+}
+.photo{
+  height:500px ;
+  width: 500px;
+  margin-left: auto;
+}
+
